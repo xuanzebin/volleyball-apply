@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="./default.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>排球队招新</h1>
+    <div class="description">教练，我想打球！</div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/主攻手.jpg" alt="主攻手图片" width=232px>
+                <div class="job">我想当主攻手！</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/二传手.jpg" alt="二传手图片" width=232px>
+                <div class="job">我想当二传手！</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/副攻手.jpg" alt="副攻手图片" width=232px>
+                <div class="job">我想当副攻手！</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/接应.jpg" alt="接应图片" width=232px>
+                <div class="job">我想当接应！</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/自由人.jpg" alt="自由人图片" width=232px>
+                <div class="job">我想当自由人！</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/球队经理.jpg" alt="球队经理图片" width=232px>
+                <div class="job">我想当球队经理！</div>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        <!-- 如果需要滚动条 -->
+    </div>
+    <div class="welcome">期待你的加入=></div>
+    <script src="./jquery-3.3.1.min.js"></script>    
+    <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script src="./main.js"></script>
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            // 如果需要分页器
+            pagination: {
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            // 如果需要滚动条
+            // scrollbar: {
+            // },
+        })        
+    </script>
+    <!-- <script>
+        var pageWidth=window.innerWidth
+        document.write('<style>html{font-size:'+pageWidth+'px}</style>')
+        console.log(pageWidth)
+    </script> -->
+</body>
+</html>
